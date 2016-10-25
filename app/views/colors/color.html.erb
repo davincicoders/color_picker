@@ -1,0 +1,14 @@
+<style>
+  body {
+    background-color: <%= @color %>;
+  }
+</style>
+
+<h1>The page is <%= @color %>!</h1>
+
+<div class='links'>
+  <%= link_to 'Try Red', color_path(color: 'Red') %>
+  <%= link_to 'Try Green', color_path(color: 'Green') %>
+  <%= link_to 'Try Blue', color_path(color: 'Blue') %>
+  <%= link_to 'Try Purple', color_path(color: 'Purple') %>
+</div>
